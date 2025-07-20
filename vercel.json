@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "buildCommand": "npm ci && npm list --depth=0 && npm run build",
   "outputDirectory": "dist",
-  "installCommand": "npm install",
-  "framework": null,
+  "framework": "vite",
+  "buildCommand": "npm install --force && npx vite build",
+  "installCommand": "npm install --force",
   "routes": [
     {
       "src": "/(.*)",
