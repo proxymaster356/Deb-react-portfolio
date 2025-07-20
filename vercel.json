@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm ci && npx vite build",
+  "buildCommand": "npm ci && chmod +x build.sh && ./build.sh",
   "outputDirectory": "dist",
   "installCommand": "npm ci",
   "framework": "vite",
