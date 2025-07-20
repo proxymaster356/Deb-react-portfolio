@@ -5,10 +5,21 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: "/Deb-react-portfolio/",
+  base: "/" ,
   resolve: {
       alias: {
           '@': path.resolve(__dirname, './src')
       }
+  },
+  optimizeDeps: {
+    include: ['ogl']
+  },
+  build: {
+    rollupOptions: {
+      external: [],
+      output: {
+        manualChunks: undefined
+      }
+    }
   }
 }));
