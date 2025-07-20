@@ -5,11 +5,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "build:dev": "npx vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "npx vite preview",
+    "postinstall": "chmod +x node_modules/.bin/vite || exit 0",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist "
   },
