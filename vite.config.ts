@@ -6,4 +6,9 @@ import path from "path";
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
   base: "/Deb-react-portfolio/",
+  resolve: {
+      alias: {
+          '@': path.resolve(__dirname, './src')
+      }
+  }
 }));
