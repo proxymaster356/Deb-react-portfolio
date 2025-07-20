@@ -58,10 +58,14 @@ bun.lockb
 
 # Deployment
 .vercel
+!.vercel/
 .netlify
 .firebase
 .next
 out/
+.vercel/**/*.js
+.vercel/**/*.json
+.vercel/**/*.lock
 
 # Operating System
 .DS_Store
