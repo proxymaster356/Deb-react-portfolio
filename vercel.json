@@ -2,7 +2,7 @@
   "version": 2,
   "outputDirectory": "dist",
   "framework": "vite",
-  "buildCommand": "npm install --force && npx vite build",
+  "buildCommand": "npx rimraf node_modules && npm install --force && npx vite build",
   "installCommand": "npm install --force",
   "routes": [
     {
